@@ -12,10 +12,10 @@ def get_api(cfg):
     return tweepy.API(auth)
 # cfg container
 cfg = {
-  "consumer_key"	: "WL2YJYOz6zBpipsJCeoJATsGX",
-  "consumer_secret"	: "R0nxqaHK4UgC2xaYihTShQjZhgwpUUzstidXdagAIXltm93nXi",
-  "access_token"	: "45705667-mibXZLkgiPjXCRPl9k5d6eHZW4cdepNJMSM65Gq4A",
-  "access_token_secret" : "r7hTbjgMuQzWlFlpkUjjuMLhVXF1FqwocRnXYBiY7WRal"
+  "consumer_key"	: "",
+  "consumer_secret"	: "",
+  "access_token"	: "",
+  "access_token_secret" : ""
 }
 
 # call Tweepy api method
@@ -29,8 +29,8 @@ tweet = "TEST  WILDFIRE LONGITUDE 76.901 LATITUDE 27.335 TIME"\
 port = '/dev/tty96B0' #port to talk to
 
 # Twilio tokens
-account_sid = "AC4efcf7c4ba2cbf310deb4aeb5abdc52c"
-auth_token = "ce488af9a112086ca5d50f25dc0477b9"
+account_sid = ""
+auth_token = ""
 
 # Twilio object container
 client = Client(account_sid, auth_token)
@@ -38,9 +38,9 @@ client = Client(account_sid, auth_token)
 # Twilio make call method
 def make_call():
     call = client.calls.create(
-    to="+18506918654",
-    from_="+18508188995",
-    url="https://handler.twilio.com/twiml/EHc8ae7ec96e3818e744b75c584f5245ff"
+    to="",
+    from_="",
+    url="https://handler.twilio.com"
     )
 
 # Read in data from Arduino
